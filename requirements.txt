@@ -1,0 +1,4 @@
+pytest
+mockito
+pydantic
+pandas
