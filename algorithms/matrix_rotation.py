@@ -93,10 +93,10 @@ class Algorithm:
     @staticmethod
     def form_matrix(idx: list[list[(int, int)]],
                     vals: list[list[int]], matrix: list[list[int]]) -> list[list[int]]:
-        for l in range(len(idx)):
-            for x in range(len(idx[l])):
-                p = idx[l][x]
-                matrix[p[0]][p[1]] = vals[l][x]
+        for lyr in range(len(idx)):
+            for x in range(len(idx[lyr])):
+                p = idx[lyr][x]
+                matrix[p[0]][p[1]] = vals[lyr][x]
         return matrix
 
     def logic(self, matrix, rotations: int) -> list[list[int]]:
